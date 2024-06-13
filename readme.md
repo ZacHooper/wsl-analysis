@@ -84,6 +84,14 @@ The "final day" rounds show a bracket structure instead.
 
 These cards provide mostly the same information as the heat cards, but we aren't able to get the individual wave scores for each competitor.
 
+#### Heat Details
+
+We can get much more detailed information about each heat by clicking on the heat card. This will open a modal with the heat details.
+
+![Heat Details](assets/heat_details.png)
+
+There isn't a url for any obvious information shown in the network tab when loading the modal, so for now we will ignore this data until we are ready to use Playwright to get the data.
+
 ### Data Model
 
 For intial storage of the data we are using a wide table format. Each row will correspond to a single competitor in a single heat. It will also contain all the event information, such as the event name, the round number, the heat number, etc. This will mean a lot of duplicate data stored initially but we will later model it into a more normalized form.
