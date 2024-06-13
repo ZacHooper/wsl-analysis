@@ -95,3 +95,5 @@ There isn't a url for any obvious information shown in the network tab when load
 ### Data Model
 
 For intial storage of the data we are using a wide table format. Each row will correspond to a single competitor in a single heat. It will also contain all the event information, such as the event name, the round number, the heat number, etc. This will mean a lot of duplicate data stored initially but we will later model it into a more normalized form.
+
+We will store each of the event pages in a separate csv file for each sex. The csv files will be named `{tour_code}_{event_id}_heat_data.csv`.
